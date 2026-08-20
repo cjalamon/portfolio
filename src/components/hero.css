@@ -1,5 +1,6 @@
 .hero{
     position: relative;
+    padding-top: 150px;
     background-color: black;
     min-height: 100vh;
     overflow: hidden;
@@ -26,18 +27,45 @@
     to {opacity: 1;}
 }
 
+.rocket{
+    position: absolute;
+    font-size: 2rem;
+    offset-path: path("M -50 40 L 439 40 A 60 60 0 1 1 439 160 A 60 60 0 1 1 439 40");
+    offset-rotate:auto;
+    animation: flyIn 4s ease-in-out forwards;
+
+}
+
+@keyframes flyIn{
+
+    0% {offset-distance: 0%; opacity: 1%;}
+    95% {opacity: 1 ;}
+    100% {offset-distance: 100%; opacity: 0;}
+
+}
+
+
 .hero-picture{
-    width: 200px;
-    height: 200px;
-    border-radius: 10%;
-    margin-bottom: 1rem;
-    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0%;
+    transform: scale(.5);
+    animation: revealPic .6s ease-out forwards;
+    animation-delay: 3.5s;
+
+}
+
+@keyframes revealPic{
+    from {opacity: 0%; transform: scale(.5);}
+    to {opacity: 100%; transform:scale(1);}
 
 }
 
 .hero p {
     color: white;
-    margin: 0;
+    margin: 1rem 5rem;
     font-size: 1rem;
     font-family: serif;
 }

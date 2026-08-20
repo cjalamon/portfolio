@@ -1,11 +1,11 @@
 .header {
     background-color: black;
-    background-size: cover;
+    background-size: cOver;
     background-position: center;
     background-repeat: no-repeat;
 
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
