@@ -5,8 +5,7 @@ function Hero(){
     return(
         <section className= "hero">
             <div className = "stars"></div>
-            <div className = "rocket">🚀</div>
-            <img src = {profilePic} alt ="CJ Alamon" className = "hero-picture" />
+            <h1> Hey, I'm CJ! </h1>
             <p>CS Student @ University of Illinois at Chicago</p>
         </section>
     )

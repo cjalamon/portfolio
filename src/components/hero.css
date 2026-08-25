@@ -27,7 +27,7 @@
     to {opacity: 1;}
 }
 
-.rocket{
+/*.rocket{
     position: absolute;
     font-size: 2rem;
     offset-path: path("M -50 40 L 439 40 A 60 60 0 1 1 439 160 A 60 60 0 1 1 439 40");
@@ -44,8 +44,9 @@
 
 }
 
+*/
 
-.hero-picture{
+/*.hero-picture{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -63,6 +64,33 @@
 
 }
 
+*/
+.hero h1 {
+    color: white;
+    margin: 0 auto;
+    font-size: 5rem;
+    font-family: serif;
+
+    overflow: hidden;
+    border-right: .15rem white;
+    white-space: nowrap;
+    letter-spacing: .15rem;
+    animation: 
+        typeIntro 3.5s steps(40, end),
+        typeBlink .75s step-end infinite;
+
+}
+
+@keyframes typeIntro{
+    from { width: 0 }
+    to { width: 100% }
+
+}
+@keyframes typeBlink{
+    from, to {border-color:transparent}
+    50% {border-color: white;}
+
+}
 .hero p {
     color: white;
     margin: 1rem 5rem;
