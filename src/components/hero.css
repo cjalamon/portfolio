@@ -70,6 +70,8 @@
     margin: 0 auto;
     font-size: 5rem;
     font-family: serif;
+    line-height: 1.3;
+
 
     overflow: hidden;
     border-right: .15rem white;
@@ -98,3 +100,24 @@
     font-family: serif;
 }
 
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap'
+}
+.ticker{
+    display:inline-flex;
+    animation:scroll 12s linear infinite;
+}
+.ticker span{
+    font-size: 1.1rem;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+
+}
